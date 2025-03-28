@@ -1,0 +1,151 @@
+
+body{
+    background: #201e1e;
+} 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn1 {
+    margin: 30px;
+    cursor: pointer;
+    width: 184px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.125em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #fff;
+    background: #644dff;
+    border: 2px solid #4836bb;
+    border-radius: .75rem;
+    box-shadow: 0 8px 0 #4836bb;
+    transform: skew(-10deg);
+    transition: all .1s ease;
+    filter: drop-shadow(0 15px 20px#654dff63);
+  }
+  
+  .btn1:active {
+    letter-spacing: 0px;
+    transform: skew(-10deg) translateY(8px);
+    box-shadow: 0 0 0#654dff63;
+  }
+
+
+.btn2 {
+    background: transparent;
+    position: relative;
+    padding: 15px 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid rgb(255,0,0);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(255,0,0);
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+  }
+  
+
+  .btn2::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    width: 100em;
+    height: 20em;
+    left: -5em;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+  }
+  
+  .btn2:hover {
+    color: #fff;
+    border: 1px solid rgb(255,0,0);
+  }
+  
+  .btn2:hover::before {
+    box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
+  }
+
+
+.btn3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    padding: 15px 40px;
+    border-radius: 10px;
+    background: #333;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444,
+      inset -5px -5px 10px #222;
+    font-family: "Damion", cursive;
+    cursor: pointer;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+  }
+  
+  .btn3:hover {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+      inset -5px -5px 10px #444;
+    color: #d6d6d6;
+    transition: 500ms;
+  }
+
+
+.btn4 {
+    perspective: 1000px;
+    padding: 1em 1em;
+    background: linear-gradient(#1a8516, #236b19);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #fff;
+    text-shadow: 0 10px 10px #000;
+    cursor: pointer;
+    transform: rotateX(70deg) rotateZ(30deg);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  .btn4::before {
+    content: "";
+    width: 100%;
+    height: 15px;
+    background-color:#236b19;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+  }
+  
+  .btn4::after {
+    content: "";
+    width: 15px;
+    height: 100%;
+    background-color:#1a8516;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotateY(-90deg);
+    transform-origin: right;
+  }
+  
+  .btn4:hover {
+    transform: rotateX(30deg) rotateZ(0);
+  }
+  

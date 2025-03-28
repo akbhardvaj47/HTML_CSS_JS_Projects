@@ -1,0 +1,38 @@
+
+@media (min-width: 992px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 1030px;
+    }
+}
+@media only screen and (max-width: 766px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 98%;
+    }
+    .search-bar{
+        display: none;
+    }
+    .headerBottom .container{
+        width: 100%;
+    }
+  }
+  @media (max-width: 905px) {
+    .headerBottom .container{
+        width: 100%!important;
+        overflow: scroll;
+    }
+    .headerBottom .container ul{
+        width: 1010px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .hIcon{
+        display: none;
+    }
+    .hImg{
+        width: 100%;
+    }
+    .inputSection{
+        display: block;
+    }
+}

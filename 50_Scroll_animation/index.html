@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - OnScroll Animation</title>
+    <style>
+        body{
+            overflow-x: hidden;
+            background: #000;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 500px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px auto;
+            font-weight: bold;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 1s ease-in-out;
+        }
+        .main:nth-of-type(odd){
+            transform: translateX(-1700px);
+        }
+        .main:nth-of-type(even){
+            transform: translateX(1700px);
+        }
+        .active{
+            transform: translateX(0)!important;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">Content</div>  
+    <div class="main">Content</div>  
+    <div class="main">Content</div>  
+    <div class="main">Content</div>  
+    <div class="main">Content</div>  
+    <div class="main">Content</div>  
+    <div class="main">Content</div> 
+    <div class="main">Content</div> 
+    <div class="main">Content</div> 
+    <div class="main">Content</div> 
+    <div class="main">Content</div>  
+    <div class="main">Content</div>  
+    <div class="main">Content</div>  
+    <div class="main">Content</div>  
+    <div class="main">Content</div>  
+    <div class="main">Content</div>  
+    <div class="main">Content</div> 
+    <div class="main">Content</div> 
+    <div class="main">Content</div> 
+    <div class="main">Content</div> 
+
+    <script>
+        let divItems = document.querySelectorAll('.main');
+
+        const centerDiv = () => {
+            let windowHeight = window.innerHeight;
+            divItems.forEach((items) => {
+                let top = items.getBoundingClientRect().top;
+                if (top < windowHeight) {
+                    items.classList.add('active');
+                } else {
+                    items.classList.remove('active');
+                }
+            });
+        };
+
+        // Call centerDiv when the page loads
+        centerDiv();
+
+        // Add event listener for the scroll event to call centerDiv
+        window.addEventListener('scroll', centerDiv);
+    </script>
+</body>
+</html>

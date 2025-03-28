@@ -1,0 +1,152 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden; 
+  }
+  
+
+  .container {
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  /* Heading Animation */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+  
+  /* Box Styles */
+  .box {
+    border: 1px solid red;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    font-size: 1.2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+  }
+  
+  .slide-in-left {
+    animation: slideInLeft 2s forwards;
+  }
+  
+  .scale-up {
+    animation: scaleUp 2s forwards;
+  }
+  
+  .rotate {
+    animation: rotateAnimation 5s linear infinite;
+  }
+
+  .color-change {
+    font-size: 1.5em;
+    color: #333;
+    animation: colorChange 4s infinite alternate;
+  }
+
+  .hover-box {
+    background-color: #FF6347;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    font-size: 1.2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .hover-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .scroll-box {
+    background-color: #FFD700;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    font-size: 1.2em;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: scrollIn 2s forwards;
+  }
+  
+  .scroll-box.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes scaleUp {
+    from {
+      transform: scale(0.5);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes colorChange {
+    0% {
+      color: #333;
+    }
+    50% {
+      color: #FF6347;
+    }
+    100% {
+      color: #4CAF50;
+    }
+  }
+  
+  @keyframes scrollIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

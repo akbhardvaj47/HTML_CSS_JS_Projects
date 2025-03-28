@@ -1,0 +1,52 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #670ecc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    color: white;
+    font-size: 5rem;
+    margin: 20px;
+}
+.timer-container {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.timer {
+    display: inline-block;
+    padding: 20px;
+    background-color: #429ee9;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.time {
+    display: inline-block;
+    padding: 20px;
+    font-size: 2rem;
+    background-color: #fff;
+    color: #429ee9;
+    border-radius: 5px;
+}
+
+@keyframes countdown {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.timer .time {
+    animation: countdown 1s ease-in-out infinite;
+}

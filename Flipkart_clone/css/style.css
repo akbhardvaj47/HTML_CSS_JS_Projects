@@ -1,0 +1,117 @@
+body{
+background: #bebdbd71;}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bbr{
+    border: 1px dashed red;
+}
+
+.headerTop{
+    /* height: 70px; */
+    background-color: white;
+}
+.hIcon a{
+    font-size: 20px;
+}
+.headerBottom{
+    width: 100%;
+    margin-top: 10px;
+}
+.headerBottom .container ul li{
+    display: flex;
+    align-items: center;
+}
+
+.search-bar{
+    background-color: rgba(127, 255, 212, 0.12);
+    border-radius: 10px;
+}
+.search-bar i{
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    font-size: 22px !important;
+
+}
+.search-bar input{
+    border: none;
+    background: transparent;
+    outline: none!important;
+}
+.search-bar input::placeholder{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.headerBottom a{
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+.dropdown-menu a{
+    height: 30px;
+}
+.dropdown p{
+    font-weight: 600;
+}
+.dropdown-menu button{
+    background: transparent!important;
+}
+.slider2{
+    overflow-y: hidden;
+    overflow: scroll;
+}
+.slider2::-webkit-scrollbar{
+    background-color: transparent;
+    width: 0px;
+}
+.slider3::-webkit-scrollbar{
+    background-color: transparent;
+    width: 0px;
+}
+.slider3 .card{
+    width: 350px!important;
+}
+/* .slider2::-webkit-scrollbar-thumb{
+    display: none;
+} */
+.list{
+    width: 1500px!important;
+}
+.list2{
+    width: 2000px!important;
+}
+.list3{
+    width: 100%;
+}
+.col-1{
+    width: calc(100%/9);
+}
+.firstSlider .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.firstSlider .card img{
+    margin-top: 20px;
+}
+.footerTop ul{
+    margin: 0;
+    padding: 0;
+}
+.footerTop ul li{
+    font-size: 12.5px;
+    list-style: none;
+    line-height: 20px;
+}
+.footerTop p{
+    margin: 0;
+    padding: 5px 0px;
+    font-size: 14px;
+    opacity: 0.5;
+}

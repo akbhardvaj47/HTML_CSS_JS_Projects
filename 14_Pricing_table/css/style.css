@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 40vh;
+    background: #08056a;
+}
+
+.main span {
+    font-size: 25px;
+}
+
+.main h1 {
+    font-size: 40px;
+    margin: 5px 0 20px 0;
+}
+
+.main button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.main button:nth-child(1) {
+    color: white;
+    border: 2px solid white;
+    background: transparent;
+}
+
+
+
+.card .content {
+    padding: 30px 0;
+    color: #fff;
+    background: #0225f0;
+}
+
+.card {
+    box-shadow: 0 0 5px 5px rgb(135, 135, 135);
+}
+
+.card-body {
+    padding: 10px 20px;
+}
+
+.card-body ul li {
+    margin-bottom: 12px;
+    padding: 10px;
+    border-bottom: 1px solid #b6b4b4;
+}
+
+.card-body a {
+    margin-top: 20px;
+    border-radius: 5px;
+    color: white;
+    background: #02761d;
+    padding: 10px 20px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 45vw;
+}
+
+/* For screens smaller than 768px (mobile devices) */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .main {
+        height: 50vh;
+    }
+
+    .card_container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/* For screens between 768px and 1024px (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        position: relative;
+        padding: 15px;
+    }
+    .card_container {
+        margin-top: 10%;
+        position: absolute;
+        top: 130%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        gap: 10px;
+        text-align: center;
+    }
+    .card{
+        width: 250px;
+        margin: auto;
+    }
+    .main {
+        max-width: 100%;
+        height: 40vh;
+    }
+
+}
+
+/* For screens larger than 1024px (desktops and large screens) */
+@media (min-width: 1025px) {
+    .card_container {
+        position: absolute;
+        padding: 0 34px;
+        display: flex;
+        text-align: center;
+        top: 35%;
+        left: 10%;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .card{
+        width: 26vw;
+    }
+}

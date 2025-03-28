@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Image Lightbox</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<h1>Lightbox Image Gallery</h1>
+  <div class="gallery">
+    <a href="#img1">
+      <img src="../img/1.jpeg" alt="Image 1" class="images">
+    </a>
+    <a href="#img2">
+      <img src="../img/2.jpeg" alt="Image 2" class="images">
+    </a>
+    <a href="#img3">
+      <img src="../img/6.jpeg" alt="Image 3" class="images">
+    </a>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="img1">
+    <div class="lightbox-content">
+      <img src="../img/1.jpeg" alt="">
+      <a href="index.html" class="close">×</a>
+    </div>
+  </div>
+
+  <div class="lightbox" id="img2">
+    <div class="lightbox-content">
+      <img src="../img/2.jpeg" alt="">
+      <a href="index.html" class="close">×</a>
+    </div>
+  </div>
+
+  <div class="lightbox" id="img3">
+    <div class="lightbox-content">
+      <img src="../img/6.jpeg" alt="">
+      <a href="index.html" class="close">×</a>
+    </div>
+  </div>
+
+</body>
+</html>

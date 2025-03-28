@@ -1,0 +1,32 @@
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #e2dddd;
+}
+.container{
+    text-align: center;
+}
+.container h1{
+    font-size: 10rem;
+    font-size: 250px;
+    font-weight: bold;
+    margin: 20px 0;
+    background-image: url(../img/th.jpeg);
+    background-position: center;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.container span{
+    font-weight: bold;
+}
+.container button{
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    background: #000dc4;}
