@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Quiz App</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div class="quiz-container" id="quiz">
+      <div class="read-data">
+          <p id="timer">Time: 00:00</p>
+          <span class='reload' onclick="location.reload()" title="refresh">&#x21bb;</span>
+      </div>
+      <hr>
+      <h2 id="question"> Question text</h2>
+      <ul>
+          <li><button class="answer-btn" data-answer="a"></button></li>
+          <li><button class="answer-btn" data-answer="b"></button></li>
+          <li><button class="answer-btn" data-answer="c"></button></li>
+          <li><button class="answer-btn" data-answer="d"></button></li>
+        </ul>
+        <button id="next-btn">Next</button>
+        <p id="score-text"></p>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
